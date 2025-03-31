@@ -10,9 +10,9 @@ function Login({ onLogin }) {
     e.preventDefault();
 
     if (onLogin(username, password)) {
-      navigate("/profile"); // Solo navega si el login es exitoso
+      navigate("/profile"); // Only go to Profile if login es successful
     } else {
-      alert("User or Password, incorrect!"); // Muestra el mensaje de error
+      alert("User or Password, incorrect!"); // Show error message
     }
   };
 
